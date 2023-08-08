@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(19, 75, 75, 0.678);
+}
+
+.card {
+  width: 90%;
+  max-width: 350px;
+  background: linear-gradient(
+    to right top,
+    #1763d6,
+    #4457d0,
+    #5f4ac8,
+    #7439bd,
+    #8621af
+  );
+  color: #fff;
+  border-radius: 10px;
+  margin: 5rem auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.input-search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  flex: 1;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-color: #fff;
+}
+.input-search button {
+  width: 40px;
+  height: 35px;
+  outline: 0;
+  border: 0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.input-search button img {
+  width: 20px;
+  background-color: #fff;
+}
+.notify {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgba(207, 195, 195, 0.982);
+  font-weight: 500;
+  display: none;
+}
+.weather h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.weather h2 {
+  font-size: 30px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+.col img {
+  width: 40px;
+}
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  margin-bottom: -20px;
+}
+
+.details p {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+.weather {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 70%;
+    margin: 1rem auto;
+  }
+  .input-search input {
+    margin-top: -25px;
+    margin-left: -10px;
+    padding: 5.5px;
+  }
+  .input-search button {
+    margin-top: -25px;
+    margin-right: -12px;
+    width: 25px;
+    height: 26px;
+  }
+  .input-search button img {
+    width: 15px;
+  }
+  .img-icon {
+    width: 90px;
+  }
+  .weather h1 {
+    font-size: 32px;
+  }
+  .weather h2 {
+    font-size: 24px;
+  }
+  .col img {
+    width: 30px;
+  }
+
+  .col {
+    gap: 5px;
+  }
+  .col p {
+    font-size: 14px;
+  }
+  .col span {
+    font-size: 14px;
+  }
+}
